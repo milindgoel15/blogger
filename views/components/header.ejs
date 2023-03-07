@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Blog Website</title>
+   <meta name="color-scheme" content="dark white">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   <style>
+      body {
+         font-family: 'Poppins', sans-serif;
+      }
+   </style>
+</head>
+
+<body class="dark:bg-black dark:text-white">
+   <header class="flex sm:flex-row justify-center m-8 lg:mx-16 xl:mx-32 sm:justify-between items-center text-center ">
+      <a class="transition-all hover:text-blue-600" href="/">
+         <h1 class="text-5xl lg:text-4xl font-semibold transition-all hover:text-blue-600">Blogger</h1>
+      </a>
+      <div class="hidden sm:block">
+         
+         <ul class=" flex flex-row justify-around gap-6 mx-4 my-2">
+            <a class="transition-all hover:text-blue-600" href="/">
+               <li class="text-lg">Home</li>
+            </a>
+            <a class="transition-all hover:text-blue-600" href="/about">
+               <li class="text-lg">About</li>
+            </a>
+            <a class="transition-all hover:text-blue-600" href="/contact">
+               <li class="text-lg">Contact</li>
+            </a>
+            <a class="transition-all hover:text-blue-600" name="newBlog" href="/compose">
+               <li class="text-lg">Compose</li>
+            </a>
+         </ul>
+      </div>
+   </header>
